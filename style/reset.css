@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color-scheme: dark;
+}
+
+body {
+    background: var(--bg-main);
+    color: var(--color-text);
+    font-family: 'Press Start 2P', monospace;
+}
+
+
+:root {
+    --bg-main: #0d0d0d;
+    --bg-header: #1a1a1a;
+    --bg-card: #1e1e1e;
+    --bg-card-hover: #2c2c2c;
+    --bg-footer: #1a1a1a;
+
+    --color-text: #f0e6d2;
+    --color-subtext: #dcd2b0;
+    --color-primary: #8b5cf6;
+    --color-border: #8b5a2b;
+    --color-accent: #d4af37;
+    --color-footer: #c4b495;
+
+    --shadow-light: rgba(139, 92, 246, 0.5);
+    --shadow-strong: rgba(139, 92, 246, 0.8);
+    --color-shadow: rgba(0, 0, 0, 0.4);
+    --color-shadow-card: rgba(139, 92, 246, 0.5);
+    --color-shadow-card-hover: rgba(139, 92, 246, 0.8);
+}
+
+header a h1 {
+    font-size: 5em;
+    transition: 0.5s;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a h1:hover {
+    scale: 1.1;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--bg-header);
+    border-bottom: 4px solid var(--color-border);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    text-shadow: 2px 2px #000;
+}
+

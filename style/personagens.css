@@ -1,68 +1,38 @@
-/* Importa a fonte Cardo e uma sans pra contrastar */
-@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Montserrat:wght@400;600&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.mago {
+    width: 10%;
+    height: auto;
 }
 
-body {
-    background: #2b1b0e;
-    /* Tom terra escuro */
-    color: #f0e6d2;
-    /* Pergaminho claro */
-    font-family: 'Cardo', serif;
-    line-height: 1.6;
-}
-
-header {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: #3d2b1f;
-    /* Madeira antiga */
-    border-bottom: 4px solid #8b5a2b;
-    /* Sienna escuro */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-}
-
-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.8rem;
-    color: #d4af37;
-    /* Dourado envelhecido */
-    text-shadow: 2px 2px #3d2b1f;
-}
 
 main {
     padding: 2rem 1rem;
 }
 
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 2rem;
 }
 
 .card details {
-    background: rgba(43, 27, 14, 0.95);
-    border: 2px solid #8b5a2b;
+    background: var(--bg-card);
+    border: 2px solid var(--color-primary);
     border-radius: 8px;
-    width: 300px;
-    padding: 0.5rem;
-    box-shadow: 0 0 12px rgba(139, 69, 19, 0.6);
-    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 280px;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--color-shadow-card);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card summary {
     list-style: none;
     cursor: pointer;
-    padding: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
+    padding: 1.7rem;
     font-size: 1.25rem;
-    /* maior para legibilidade */
-    color: #f0e6d2;
+    color: var(--color-text);
     text-shadow: 1px 1px #3d2b1f;
     position: relative;
 }
@@ -75,7 +45,7 @@ main {
     content: " ▶";
     position: absolute;
     right: 1rem;
-    color: #d4af37;
+    color: var(--color-accent);
     font-size: 1.25rem;
     transition: transform 0.2s;
 }
@@ -86,11 +56,10 @@ main {
 
 .card .content {
     padding: 1rem;
-    border-top: 1px solid #8b5a2b;
+    border-top: 1px solid var(--color-border);
     font-size: 1rem;
-    /* aumentei para melhor leitura */
-    color: #dcd2b0;
-    font-family: 'Cardo', serif;
+    color: var(--color-subtext);
+    font-family: 'Uncial Antiqua', serif;
 }
 
 .card .content p {
@@ -100,9 +69,19 @@ main {
 footer {
     text-align: center;
     padding: 1.5rem;
-    background: #3d2b1f;
-    border-top: 4px solid #8b5a2b;
-    color: #c4b495;
+    background: var(--bg-footer);
+    border-top: 4px solid var(--color-border);
+    color: var(--color-footer);
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Press Start 2P', monospace;
+}
+
+h2 {
+    border-bottom: 5px solid black;
+    border-top: 1px solid black;
+    justify-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    font-size: 1.4rem;
 }

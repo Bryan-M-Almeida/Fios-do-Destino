@@ -42,7 +42,7 @@
             "cicatrizes": [
                 "Três marcas finas no queixo, lembrança de um duelo"
             ],
-            "tatuagens": []
+            "tatuagens": ["Nenhuma"]
         }
     },
     {
@@ -85,7 +85,9 @@
             "cor_de_pele": "Pele marfim com leve rubor",
             "cabelo": "Castanho-avermelhado, longos cachos presos por fitas douradas",
             "cor_dos_olhos": "Avelã profunda",
-            "cicatrizes": [],
+            "cicatrizes": [
+                "Nenhuma"
+            ],
             "tatuagens": [
                 "Ramo de hera tatuado no pulso esquerdo"
             ]
@@ -229,7 +231,9 @@
             "cor_de_pele": "Pele clara com sardas suaves",
             "cabelo": "Castanho claro, curto e bagunçado",
             "cor_dos_olhos": "Verdes profundos",
-            "cicatrizes": [],
+            "cicatrizes": [
+                "Nenhuma"
+            ],
             "tatuagens": [
                 "Símbolos de escritura rúnica no pulso"
             ]
@@ -275,8 +279,10 @@
             "cor_de_pele": "Bronze jovem reluzente",
             "cabelo": "Castanho escuro, cortado rente nas laterais",
             "cor_dos_olhos": "Verdes vibrantes",
-            "cicatrizes": [],
-            "tatuagens": []
+            "cicatrizes": [
+                "Nenhuma"
+            ],
+            "tatuagens": ["Nenhuma"]
         }
     },
     {
@@ -319,8 +325,10 @@
             "cor_de_pele": "Pele clara com brilho perolado",
             "cabelo": "Loiro-prateado, longo e sedoso",
             "cor_dos_olhos": "Azuis cintilantes",
-            "cicatrizes": [],
-            "tatuagens": []
+            "cicatrizes": [
+                "Nenhuma"
+            ],
+            "tatuagens": ["Nenhuma"]
         }
     },
     {
@@ -459,7 +467,9 @@
             "cor_de_pele": "Perolada com brilho suave",
             "cabelo": "Prateado, flutuante como se no espaço",
             "cor_dos_olhos": "Dourados, como estrelas cadentes",
-            "cicatrizes": [],
+            "cicatrizes": [
+                "Nenhuma"
+            ],
             "tatuagens": [
                 "Constelações pintadas nos ombros"
             ]

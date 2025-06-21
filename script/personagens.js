@@ -11,7 +11,7 @@ fetch('data/personagens.json')
         <details>
           <summary>${p.nome}</summary>
           <div class="content">
-            <p><strong>Gênero:</strong> ${p.genero} | <strong>Idade:</strong> ${p.idade}</p>
+            <p><strong>Gênero:</strong> ${p.genero} <br> <strong>Idade:</strong> ${p.idade}</p>
             <p><strong>Personalidade:</strong> ${p.personalidade}</p>
             <p><strong>Gostos:</strong> ${p.gostos.join(', ')}</p>
             <p><strong>Hobbies:</strong> ${p.hobbies.join(', ')}</p>
