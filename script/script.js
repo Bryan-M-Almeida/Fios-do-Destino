@@ -1,30 +1,30 @@
 const cardContainer = document.querySelector('.card-container');
 
+function criarCard(titulo, descricao, link) {
+    const a = document.createElement('a');
+    a.href = link;
+    a.style.textDecoration = 'none';
+    a.style.color = 'inherit';
 
-
-function criarCard(titulo, descricao) {
     const card = document.createElement('div');
-    const p = document.createElement('p');
-    const h = document.createElement('h1');
     card.className = 'card';
-    cardContainer.appendChild(card);
-    card.appendChild(h)
-    card.appendChild(p);
+
+    const h = document.createElement('h1');
     h.textContent = titulo;
+
+    const p = document.createElement('p');
     p.textContent = descricao;
 
+    a.appendChild(card);
+    card.appendChild(h);
+    card.appendChild(p);
 
-
-
+    cardContainer.appendChild(a);
 }
 
-const historia = criarCard('Inicie sua história', 'Inicie sua história aqui e trace seu próprio destino');
-const progresso = criarCard('Progresso', 'acompanhe seu progresso até agora');
-const personagens = criarCard('Personagen', 'Veja os personagens presentes na história');
-
-
-
-
-
-
-
+criarCard('Inicie sua história', 'Inicie sua história aqui e trace seu próprio destino', 'rumo.html');
+criarCard('Progresso', 'Acompanhe seu progresso até agora', 'progresso.html');
+criarCard('Personagens', 'Veja os personagens presentes na história', 'personagens.html');
+criarCard('Criação', 'crie seu personagem para a sua história e salve', 'criacao.html');
+criarCard('História', 'defina o gênero de sua história (Romance, fantasia, Terror, etc)', 'historia.html');
+criarCard('Gerenciador', 'Gerencie seus dados, personagens, etc', 'gerenciador.html');
