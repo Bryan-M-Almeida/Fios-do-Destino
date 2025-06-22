@@ -10,11 +10,8 @@ body {
 }
 
 main {
+    text-align: center;
     padding: 2rem;
-    display: flex;
-    justify-content: center;
-    justify-self: center;
-    align-self: center;
 }
 
 .card-container {
@@ -22,6 +19,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-self: center;
     gap: 1.5rem;
     padding: 2rem;
 }

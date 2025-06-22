@@ -21,6 +21,12 @@ function criarCard(titulo, descricao, link) {
 
     cardContainer.appendChild(a);
 }
+const personagemSalvo = JSON.parse(localStorage.getItem('protagonista'));
+const boasVindas = document.querySelector('#boas-vindas');
+if (personagemSalvo) {
+  boasVindas.innerHTML = `Bem-vindo, ${personagemSalvo.nome}!`
+}
+
 
 criarCard('Inicie sua história', 'Inicie sua história aqui e trace seu próprio destino', 'rumo.html');
 criarCard('Progresso', 'Acompanhe seu progresso até agora', 'progresso.html');
