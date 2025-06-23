@@ -15,6 +15,11 @@ body {
     user-select: none;
 }
 
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
 .card {
     background: var(--bg-card);
     border: 2px solid var(--color-primary);
@@ -48,6 +53,8 @@ body {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #msg{
