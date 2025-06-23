@@ -4,16 +4,6 @@ body {
     font-family: 'Press Start 2P', monospace;
 }
 
-
-.mago {
-    width: 10%;
-}
-
-main {
-    text-align: center;
-    padding: 2rem;
-}
-
 .card-container {
     width: 80%;
     display: flex;
@@ -22,6 +12,7 @@ main {
     justify-self: center;
     gap: 1.5rem;
     padding: 2rem;
+    user-select: none;
 }
 
 .card {
@@ -51,4 +42,15 @@ main {
     transform: translateY(-4px);
     box-shadow: 0 0 20px var(--shadow-strong);
     background: var(--bg-card-hover);
+}
+
+.msg-container{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#msg{
+    cursor: default;
+    user-select: none;
 }

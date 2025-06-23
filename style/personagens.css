@@ -6,6 +6,8 @@
 
 main {
     padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -64,16 +66,6 @@ main {
 
 .card .content p {
     margin-bottom: 0.75rem;
-}
-
-footer {
-    text-align: center;
-    padding: 1.5rem;
-    background: var(--bg-footer);
-    border-top: 4px solid var(--color-border);
-    color: var(--color-footer);
-    font-size: 1rem;
-    font-family: 'Press Start 2P', monospace;
 }
 
 h2 {
