@@ -92,4 +92,79 @@ footer {
     color: var(--color-footer);
     font-size: 1rem;
     font-family: 'Press Start 2P', monospace;
+    position: relative;
+    bottom: 0;
+}
+
+#loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#loading-overlay.hidden {
+    display: none;
+}
+
+.mago2 {
+    width: 100px;
+    height: auto;
+    animation: mago-move 1s steps(4) infinite;
+}
+
+@keyframes mago-move {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+    }
+
+    #msg {
+        font-size: 0.8rem;
+    }
+
+    .mago2 {
+        width: 70px;
+    }
+}
+
+footer {
+    margin-top: 9.5%;
+}
+
+.msg-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 80%;
+    text-align: center;
+}
+
+#msg {
+    font-size: 1rem;
+    color: var(--color-primary);
+    cursor: default;
+    user-select: none;
+    text-shadow: 1px 1px var(--color-shadow);
+    line-height: 1.4;
 }
