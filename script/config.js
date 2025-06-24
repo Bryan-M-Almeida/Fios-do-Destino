@@ -141,14 +141,6 @@ if (header || cardContainer) {
         mostrarLoading();
     });
 
-    function pagina(pagina) {
-        if (cardContainer) {
-            return cardContainer;
-        } else if (header) {
-            return header;
-        }
-    }
-
     pagina().addEventListener('click', (e) => {
         const link = e.target.closest('a');
         if (!link) return;

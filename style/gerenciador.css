@@ -1,4 +1,4 @@
-#dados {
+section {
     background: var(--bg-card);
     border: 2px solid var(--color-primary);
     border-radius: 10px;
@@ -10,26 +10,23 @@
     flex-direction: column;
     justify-content: center;
     justify-self: center;
-}
-
-section{
     margin-top: 5%;
     user-select: none;
 }
 
-#dados h1 {
+section h1 {
     font-size: 1.2rem;
     color: var(--color-accent);
     margin-bottom: 1rem;
 }
 
-#dados p {
+section p {
     font-size: 0.7rem;
     color: var(--color-subtext);
     margin-bottom: 1.5rem;
 }
 
-#resetar {
+button {
     background: var(--color-primary);
     border: none;
     padding: 0.75rem 1.5rem;
@@ -40,7 +37,7 @@ section{
     transition: 0.3s;
 }
 
-#resetar:hover {
+button:hover {
     background: var(--color-accent);
     box-shadow: 0 0 12px var(--shadow-strong);
 }

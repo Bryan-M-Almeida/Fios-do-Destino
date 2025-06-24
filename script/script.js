@@ -29,10 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     boasVindas.textContent = `Bem vindo, ${personagemSalvo.nome || ''}`;
   }
 
-  criarCard('Inicie sua história', 'Inicie sua história aqui e trace seu próprio destino', 'rumo.html');
-  criarCard('Progresso', 'Acompanhe seu progresso até agora', 'progresso.html');
+  criarCard('Inicie sua história', 'Inicie sua história aqui e trace seu próprio destino', 'historia.html');
+  criarCard('Atributos', 'Veja seus atributos disponíveis e a quantidade de xp necessária para o próximo lvl', 'atributos.html');
+  criarCard('Progresso', 'Acompanhe seu progresso até agora, veja suas escolhas e ações', 'progresso.html');
   criarCard('Personagens', 'Veja os personagens presentes na história', 'personagens.html');
   criarCard('Criação', 'Crie seu personagem para a sua história e salve', 'criacao.html');
-  criarCard('História', 'Defina o gênero de sua história (Romance, fantasia, Terror, etc)', 'historia.html');
   criarCard('Gerenciador', 'Gerencie seus dados, personagens, etc', 'gerenciador.html');
+  criarCard('Inventário', 'Veja o seu inventário', 'inventario.html');
 });
