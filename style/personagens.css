@@ -11,14 +11,14 @@ main {
 }
 
 
-.card-container {
+.card-personagem-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 2rem;
 }
 
-.card details {
+.card-personagem details {
     background: var(--bg-card);
     border: 2px solid var(--color-primary);
     border-radius: 8px;
@@ -29,7 +29,7 @@ main {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.card summary {
+.card-personagem summary {
     list-style: none;
     cursor: pointer;
     padding: 1.7rem;
@@ -39,11 +39,11 @@ main {
     position: relative;
 }
 
-.card summary::-webkit-details-marker {
+.card-personagem summary::-webkit-details-marker {
     display: none;
 }
 
-.card summary::after {
+.card-personagem summary::after {
     content: " ▶";
     position: absolute;
     right: 1rem;
@@ -52,11 +52,11 @@ main {
     transition: transform 0.2s;
 }
 
-.card details[open] summary::after {
+.card-personagem details[open] summary::after {
     transform: rotate(90deg);
 }
 
-.card .content {
+.card-personagem .content {
     padding: 1rem;
     border-top: 1px solid var(--color-border);
     font-size: 1rem;
@@ -64,7 +64,7 @@ main {
     font-family: 'Uncial Antiqua', serif;
 }
 
-.card .content p {
+.card-personagem .content p {
     margin-bottom: 0.75rem;
 }
 

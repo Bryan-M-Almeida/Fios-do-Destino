@@ -140,17 +140,4 @@ if (header || cardContainer) {
     window.addEventListener('beforeunload', () => {
         mostrarLoading();
     });
-
-    pagina().addEventListener('click', (e) => {
-        const link = e.target.closest('a');
-        if (!link) return;
-        e.preventDefault();
-
-        mostrarLoading();
-
-        setTimeout(() => {
-            esconderLoading();
-            window.location.href = link.href;
-        }, 3000);
-    });
 }

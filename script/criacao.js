@@ -1,12 +1,12 @@
 const formContainer = document.querySelector('.form-container');
-const acept = document.querySelector('#btn-acept');
+const agree = document.querySelector('#btn-acept');
 const reject = document.querySelector('#btn-reject');
 const criacaoContainer = document.querySelector('#criar');
 
 
 formContainer.style.display = 'none';
 
-acept.addEventListener('click', function () {
+agree.addEventListener('click', function () {
     criacaoContainer.style.display = 'none';
     formContainer.style.display = 'flex';
     formContainer.innerHTML = `
