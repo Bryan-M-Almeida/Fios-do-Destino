@@ -14,7 +14,7 @@ section h1 {
     color: #ff5050;
 }
 
-.armas-container {
+.armas-container, .itens-container, .amuletos-container, .equipamentos-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -35,15 +35,14 @@ section h1 {
     border-color: #ff5050;
 }
 
-.card summary {
+summary {
     list-style: none;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.card summary::-webkit-details-marker {
+summary::-webkit-details-marker {
     display: none;
 }
 
